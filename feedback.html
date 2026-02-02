@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Completion Feedback — Prachit Shrikhande</title>
+    <meta name="description"
+        content="Share your feedback about working with Prachit Shrikhande. Your insights help improve my services and assist other businesses in understanding the value of professional web development." />
+    <meta name="author" content="Prachit Shrikhande" />
+    <meta name="theme-color" content="#0f1b2d" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* =========================
+       Theme & Reset
+       ========================= */
+        :root {
+            --bg: #0b1220;
+            --card: #111a2b;
+            --muted: #94a3b8;
+            --text: #e6eef8;
+            --primary: #2b6cb0;
+            --primary-600: #2c5282;
+            --accent: #60a5fa;
+            --ring: rgba(96, 165, 250, .35);
+            --shadow: 0 10px 30px rgba(2, 12, 27, 0.4);
+            --radius: 16px;
+            --space: clamp(1rem, 1.2vw + .6rem, 1.6rem);
+            --success: #10b981;
+            --error: #ef4444;
+            --warning: #f59e0b;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            color: var(--text);
+            background: radial-gradient(1200px 600px at 100% -10%, rgba(96, 165, 250, .1), transparent 40%), var(--bg);
+            line-height: 1.65;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            width: min(800px, 92%);
+            margin-inline: auto;
+        }
+
+        /* Header */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: saturate(180%) blur(10px);
+            background: linear-gradient(to bottom, rgba(11, 18, 32, .85), rgba(11, 18, 32, .6));
+            border-bottom: 1px solid rgba(148, 163, 184, .12);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .8rem 0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            font-weight: 800;
+            letter-spacing: .2px;
+        }
+
+        .brand__dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            box-shadow: 0 0 0 3px var(--ring);
+        }
+
+        .brand__text {
+            color: #e2e8f0;
+        }
+
+        .brand__accent {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: clamp(2rem, 4vw, 4rem) 0 clamp(1.5rem, 3vw, 2rem);
+            text-align: center;
+        }
+
+        .hero__icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 40px rgba(96, 165, 250, 0.3);
+        }
+
+        .hero__icon svg {
+            width: 40px;
+            height: 40px;
+            fill: #081227;
+        }
+
+        .hero__title {
+            font-size: clamp(1.6rem, 2.2vw + 1rem, 2.4rem);
+            margin: 0 0 .8rem;
+            background: linear-gradient(135deg, var(--text), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero__subtitle {
+            color: var(--muted);
+            font-size: clamp(0.95rem, 1vw + 0.5rem, 1.1rem);
+            max-width: 60ch;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .hero__bg-shape {
+            position: absolute;
+            inset: auto -15% -20% -15%;
+            height: 180px;
+            z-index: -1;
+            background: radial-gradient(700px 200px at 50% 0%, rgba(96, 165, 250, .15), transparent 60%);
+            filter: blur(25px);
+        }
+
+        /* Form Card */
+        .form-section {
+            padding: 0 0 clamp(2rem, 4vw, 4rem);
+        }
+
+        .form-card {
+            background: var(--card);
+            border: 1px solid rgba(148, 163, 184, .12);
+            border-radius: var(--radius);
+            padding: clamp(1.5rem, 2.5vw, 2.5rem);
+            box-shadow: var(--shadow);
+        }
+
+        /* Form Elements */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group:last-of-type {
+            margin-bottom: 2rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        .form-label .required {
+            color: var(--error);
+            margin-left: 0.25rem;
+        }
+
+        .form-hint {
+            display: block;
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 0.4rem;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .form-input,
+        .form-textarea,
+        .form-select {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            border-radius: 12px;
+            background: rgba(12, 23, 41, 0.8);
+            border: 1px solid rgba(148, 163, 184, .22);
+            color: var(--text);
+            font-size: 1rem;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus,
+        .form-select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 4px var(--ring);
+            background: #0c1729;
+        }
+
+        .form-input::placeholder,
+        .form-textarea::placeholder {
+            color: var(--muted);
+            opacity: 0.7;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            padding-right: 2.5rem;
+        }
+
+        .form-select option {
+            background: var(--card);
+            color: var(--text);
+        }
+
+        /* Rating Scale */
+        .rating-scale {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .rating-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .rating-options {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .rating-option {
+            position: relative;
+        }
+
+        .rating-option input {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .rating-option label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(12, 23, 41, 0.8);
+            border: 1px solid rgba(148, 163, 184, .22);
+            color: var(--muted);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .rating-option input:checked+label {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-color: var(--accent);
+            color: #081227;
+            box-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
+        }
+
+        .rating-option input:focus+label {
+            box-shadow: 0 0 0 4px var(--ring);
+        }
+
+        .rating-option:hover label {
+            border-color: var(--accent);
+            background: rgba(96, 165, 250, 0.1);
+        }
+
+        /* NPS Scale (1-10) */
+        .nps-scale .rating-options {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+        }
+
+        @media (min-width: 600px) {
+            .nps-scale .rating-options {
+                grid-template-columns: repeat(10, 1fr);
+            }
+        }
+
+        .nps-scale .rating-option label {
+            width: 100%;
+            min-width: 36px;
+            height: 44px;
+        }
+
+        /* Radio Group */
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .radio-option {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .radio-option label {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 12px;
+            background: rgba(12, 23, 41, 0.8);
+            border: 1px solid rgba(148, 163, 184, .22);
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.2s ease;
+        }
+
+        .radio-option label::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid rgba(148, 163, 184, .5);
+            background: transparent;
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+        }
+
+        .radio-option input[type="radio"]:checked+label {
+            border-color: var(--accent);
+            background: rgba(96, 165, 250, 0.1);
+        }
+
+        .radio-option input[type="radio"]:checked+label::before {
+            border-color: var(--accent);
+            background: var(--accent);
+            box-shadow: inset 0 0 0 3px var(--card);
+        }
+
+        .radio-option input[type="radio"]:focus+label {
+            box-shadow: 0 0 0 4px var(--ring);
+        }
+
+        .radio-option:hover label {
+            border-color: rgba(96, 165, 250, 0.5);
+        }
+
+        /* Section Divider */
+        .section-divider {
+            border: none;
+            border-top: 1px solid rgba(148, 163, 184, .15);
+            margin: 2rem 0;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-title svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* Submit Button */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            border-radius: 999px;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            transition: transform .06s ease, background .2s ease, box-shadow .2s ease;
+            font-family: inherit;
+        }
+
+        .btn--primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #081227;
+            width: 100%;
+        }
+
+        .btn--primary:hover {
+            box-shadow: 0 8px 30px rgba(96, 165, 250, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .btn--primary:active {
+            transform: translateY(0);
+        }
+
+        .btn--primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Form status message */
+        .form-status {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 12px;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .form-status.success {
+            display: block;
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid var(--success);
+            color: var(--success);
+        }
+
+        .form-status.error {
+            display: block;
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid var(--error);
+            color: var(--error);
+        }
+
+        /* Footer */
+        .site-footer {
+            border-top: 1px solid rgba(148, 163, 184, .1);
+            padding: 1.4rem 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .footer-inner p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--muted);
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(15px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .reveal-delay-1 {
+            animation-delay: 0.1s;
+        }
+
+        .reveal-delay-2 {
+            animation-delay: 0.2s;
+        }
+
+        .reveal-delay-3 {
+            animation-delay: 0.3s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Thank You Modal */
+        .thank-you-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(11, 18, 32, 0.95);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .thank-you-overlay.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .thank-you-content {
+            text-align: center;
+            padding: 2rem;
+            max-width: 500px;
+        }
+
+        .thank-you-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--success), #34d399);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 60px rgba(16, 185, 129, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        .thank-you-icon svg {
+            width: 50px;
+            height: 50px;
+            fill: white;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 60px rgba(16, 185, 129, 0.4);
+            }
+
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 80px rgba(16, 185, 129, 0.6);
+            }
+        }
+
+        .thank-you-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.75rem;
+            background: linear-gradient(135deg, var(--text), var(--success));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .thank-you-message {
+            color: var(--muted);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .btn--secondary {
+            background: transparent;
+            border: 1px solid rgba(148, 163, 184, .22);
+            color: var(--text);
+            padding: 0.8rem 1.5rem;
+            display: inline-flex;
+        }
+
+        .btn--secondary:hover {
+            border-color: var(--accent);
+            background: rgba(96, 165, 250, 0.1);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .rating-option label {
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+            }
+
+            .nps-scale .rating-option label {
+                height: 40px;
+                min-width: 32px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" aria-label="Go to portfolio">
+                <span class="brand__dot" aria-hidden="true"></span>
+                <span class="brand__text">Prachit</span><span class="brand__accent">.dev</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero reveal">
+            <div class="container">
+                <div class="hero__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM11 5h2v6h-2zm0 8h2v2h-2z" />
+                    </svg>
+                </div>
+                <h1 class="hero__title">Project Completion Feedback</h1>
+                <p class="hero__subtitle">
+                    Thank you for choosing me for your web development needs. Your feedback helps me improve my process
+                    and helps
+                    other businesses understand the value of a professional web presence.
+                </p>
+            </div>
+            <div class="hero__bg-shape" aria-hidden="true"></div>
+        </section>
+
+        <!-- Feedback Form -->
+        <section class="form-section">
+            <div class="container">
+                <form class="form-card reveal reveal-delay-1" id="feedbackForm" novalidate
+                    action="https://formspree.io/f/mjgorqjy" method="POST">
+                    <!-- Basic Information -->
+                    <div class="section-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg>
+                        Basic Information
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="clientName">
+                            Client Name / Business Name<span class="required">*</span>
+                        </label>
+                        <input type="text" id="clientName" name="clientName" class="form-input"
+                            placeholder="Enter your name or business name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="projectType">
+                            Project Type<span class="required">*</span>
+                        </label>
+                        <select id="projectType" name="projectType" class="form-select" required>
+                            <option value="" disabled selected>Select project type</option>
+                            <option value="landing-page">Landing Page / Single Page Website</option>
+                            <option value="business-website">Business Website (Multi-page)</option>
+                            <option value="ecommerce">E-commerce / Online Store</option>
+                            <option value="web-application">Custom Web Application</option>
+                            <option value="portfolio">Portfolio Website</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <hr class="section-divider">
+
+                    <!-- Satisfaction Ratings -->
+                    <div class="section-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
+                        </svg>
+                        Satisfaction Ratings
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            How satisfied are you with the final result?<span class="required">*</span>
+                        </label>
+                        <div class="rating-scale">
+                            <div class="rating-labels">
+                                <span>Not Satisfied</span>
+                                <span>Exceeded Expectations</span>
+                            </div>
+                            <div class="rating-options" role="radiogroup" aria-label="Final result satisfaction">
+                                <div class="rating-option">
+                                    <input type="radio" id="satisfaction-1" name="satisfaction" value="1" required>
+                                    <label for="satisfaction-1">1</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="satisfaction-2" name="satisfaction" value="2">
+                                    <label for="satisfaction-2">2</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="satisfaction-3" name="satisfaction" value="3">
+                                    <label for="satisfaction-3">3</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="satisfaction-4" name="satisfaction" value="4">
+                                    <label for="satisfaction-4">4</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="satisfaction-5" name="satisfaction" value="5">
+                                    <label for="satisfaction-5">5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            How would you rate the communication throughout the project?<span class="required">*</span>
+                        </label>
+                        <div class="rating-scale">
+                            <div class="rating-labels">
+                                <span>Poor</span>
+                                <span>Excellent</span>
+                            </div>
+                            <div class="rating-options" role="radiogroup" aria-label="Communication rating">
+                                <div class="rating-option">
+                                    <input type="radio" id="communication-1" name="communication" value="1" required>
+                                    <label for="communication-1">1</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="communication-2" name="communication" value="2">
+                                    <label for="communication-2">2</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="communication-3" name="communication" value="3">
+                                    <label for="communication-3">3</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="communication-4" name="communication" value="4">
+                                    <label for="communication-4">4</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="communication-5" name="communication" value="5">
+                                    <label for="communication-5">5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            How would you rate the technical quality and speed of the site?<span
+                                class="required">*</span>
+                        </label>
+                        <div class="rating-scale">
+                            <div class="rating-labels">
+                                <span>Poor Quality/Slow</span>
+                                <span>High Quality/Very Fast</span>
+                            </div>
+                            <div class="rating-options" role="radiogroup" aria-label="Technical quality rating">
+                                <div class="rating-option">
+                                    <input type="radio" id="quality-1" name="quality" value="1" required>
+                                    <label for="quality-1">1</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="quality-2" name="quality" value="2">
+                                    <label for="quality-2">2</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="quality-3" name="quality" value="3">
+                                    <label for="quality-3">3</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="quality-4" name="quality" value="4">
+                                    <label for="quality-4">4</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="quality-5" name="quality" value="5">
+                                    <label for="quality-5">5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="section-divider">
+
+                    <!-- Detailed Feedback -->
+                    <div class="section-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+                        </svg>
+                        Detailed Feedback
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="challenge">
+                            What was the biggest challenge you faced before we started, and how did this project solve
+                            it?
+                        </label>
+                        <span class="form-hint">This helps create 'Problem/Solution' case studies</span>
+                        <textarea id="challenge" name="challenge" class="form-textarea" rows="4"
+                            placeholder="Describe the challenge you faced and how this project addressed it..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="testimonial">
+                            Could you provide a brief testimonial about your experience working with me?
+                        </label>
+                        <span class="form-hint">By providing this, you grant permission to use this quote on my
+                            website/portfolio.
+                        </span>
+                        <textarea id="testimonial" name="testimonial" class="form-textarea" rows="4"
+                            placeholder="Share your experience working with me..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            May I use your business logo on my portfolio?<span class="required">*</span>
+                        </label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="logo-yes" name="logoPermission" value="yes" required>
+                                <label for="logo-yes">Yes, you may use my logo</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="logo-no" name="logoPermission" value="no">
+                                <label for="logo-no">No, please don't use my logo</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="logo-maybe" name="logoPermission" value="ask-first">
+                                <label for="logo-maybe">Please ask me first before using</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="section-divider">
+
+                    <!-- NPS Score -->
+                    <div class="section-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                        </svg>
+                        Recommendation
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            On a scale of 1-10, how likely are you to recommend my services to a colleague?<span
+                                class="required">*</span>
+                        </label>
+                        <div class="rating-scale nps-scale">
+                            <div class="rating-labels">
+                                <span>Very Unlikely</span>
+                                <span>Very Likely</span>
+                            </div>
+                            <div class="rating-options" role="radiogroup" aria-label="Recommendation likelihood">
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-1" name="nps" value="1" required>
+                                    <label for="nps-1">1</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-2" name="nps" value="2">
+                                    <label for="nps-2">2</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-3" name="nps" value="3">
+                                    <label for="nps-3">3</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-4" name="nps" value="4">
+                                    <label for="nps-4">4</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-5" name="nps" value="5">
+                                    <label for="nps-5">5</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-6" name="nps" value="6">
+                                    <label for="nps-6">6</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-7" name="nps" value="7">
+                                    <label for="nps-7">7</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-8" name="nps" value="8">
+                                    <label for="nps-8">8</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-9" name="nps" value="9">
+                                    <label for="nps-9">9</label>
+                                </div>
+                                <div class="rating-option">
+                                    <input type="radio" id="nps-10" name="nps" value="10">
+                                    <label for="nps-10">10</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="section-divider">
+
+                    <!-- Additional Comments -->
+                    <div class="section-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M21 6h-2V3h-2v3h-3V3h-2v3H9V3H7v3H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H5V10h16v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z" />
+                        </svg>
+                        Additional Comments
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="improvements">
+                            Is there anything else I could have done to make this experience better for you?
+                        </label>
+                        <textarea id="improvements" name="improvements" class="form-textarea" rows="4"
+                            placeholder="Share any suggestions or areas for improvement..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary" id="submitBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                        </svg>
+                        Submit Feedback
+                    </button>
+
+                    <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Thank You Overlay -->
+    <div class="thank-you-overlay" id="thankYouOverlay">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                </svg>
+            </div>
+            <h2 class="thank-you-title">Thank You!</h2>
+            <p class="thank-you-message">
+                Your feedback has been submitted successfully. I truly appreciate you taking the time to share your
+                experience.
+                Your insights help me improve and serve clients better.
+            </p>
+            <a href="index.html" class="btn btn--secondary">
+                ← Back to Portfolio
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Prachit Shrikhande. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Portfolio</a>
+                <a href="mailto:prachitshrikhande@gmail.com">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Form handling
+        const form = document.getElementById('feedbackForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formStatus = document.getElementById('formStatus');
+        const thankYouOverlay = document.getElementById('thankYouOverlay');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Basic validation
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (field.type === 'radio') {
+                    const radioGroup = form.querySelectorAll(`input[name="${field.name}"]`);
+                    const isChecked = Array.from(radioGroup).some(r => r.checked);
+                    if (!isChecked) {
+                        isValid = false;
+                    }
+                } else if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = 'var(--error)';
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+
+            if (!isValid) {
+                formStatus.textContent = 'Please fill in all required fields.';
+                formStatus.className = 'form-status error';
+                return;
+            }
+
+            // Submit to Formspree
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" 
+             style="animation: spin 1s linear infinite;">
+          <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+        </svg>
+        Submitting...
+      `;
+
+            // Add spinning animation
+            const style = document.createElement('style');
+            style.textContent = '@keyframes spin { to { transform: rotate(360deg); } }';
+            document.head.appendChild(style);
+
+            // Submit form data to Formspree
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Show thank you overlay
+                        thankYouOverlay.classList.add('show');
+                        document.body.style.overflow = 'hidden';
+
+                        // Reset form
+                        form.reset();
+                        formStatus.className = 'form-status';
+                    } else {
+                        throw new Error('Form submission failed');
+                    }
+                })
+                .catch(error => {
+                    formStatus.textContent = 'Oops! There was a problem submitting your feedback. Please try again.';
+                    formStatus.className = 'form-status error';
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+          Submit Feedback
+        `;
+                });
+        });
+
+        // Close overlay when clicking outside
+        thankYouOverlay.addEventListener('click', function (e) {
+            if (e.target === thankYouOverlay) {
+                thankYouOverlay.classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Add input event listeners to clear error state
+        form.querySelectorAll('input, textarea, select').forEach(field => {
+            field.addEventListener('input', function () {
+                this.style.borderColor = '';
+                formStatus.className = 'form-status';
+            });
+        });
+    </script>
+</body>
+
+</html>
